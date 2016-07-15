@@ -22,6 +22,9 @@ Currently only as CommonJS module
 # myComponent.coffee
 # Medium should be available globally (just link the medium.patched.js in your index.html)
 module.exports =
-  components:
+  directives:
     medium: require './mediumDirective'
+```
+```html
+<div v-medium='text' mode='rich'>Hello World</div>
 ```
